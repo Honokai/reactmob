@@ -13,6 +13,7 @@ export const AppButton = ({ onPress, title, backgroundColor, width}) => (
 const styles = StyleSheet.create({
     appButtonContainer: {
       marginTop: 10,
+      marginBottom: 10,
       elevation: 8,
       backgroundColor: "#009688",
       borderRadius: 10,

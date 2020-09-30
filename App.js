@@ -15,6 +15,8 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import Habilidades from './Profile/habilidades';
 import Informacao from './Profile/informacao';
 import Grupos from './Grupos';
+import Introducao from './introducao';
+import Introducao2 from './introducao/introducao';
 
 import {AuthContext} from './context';
 
@@ -78,8 +80,10 @@ export default function App() {
         </Drawer.Navigator>
         :
         <AuthStack.Navigator>
+          <AuthStack.Screen name="Introdução" options={{ title: 'Introdução' }} component={Introducao} />
+          <AuthStack.Screen name="Introdução2" options={{ title: 'Sobre habilidades' }} component={Introducao2} />
           <AuthStack.Screen name="SignIn" options={{ title: 'Grupou' }} component={SignIn} />
-          <AuthStack.Screen name="CreateAccount" options={{ title: 'Criar conta' }} component={CreateAccount} />
+          <AuthStack.Screen name="CreateAccount" options={{ title: 'Grupou - Criar conta' }} component={CreateAccount} />
         </AuthStack.Navigator>
         }
       </NavigationContainer>
