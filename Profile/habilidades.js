@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import {AppButton} from '../custom/custom';
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
 export default Habilidades = () => {
 
@@ -8,39 +8,46 @@ export default Habilidades = () => {
         <View>
             <Text style={styles.text}>Suas habilidades</Text>
             <View style={{flexDirection: 'row'}}>
-                <Text style={[styles.header,{flex:1}]}>Nível</Text>
-                <Text style={[styles.header,{flex:1}]}>Habilidade</Text>
-                <Text style={[styles.header,{flex:1}]}>Tipo</Text>
+                <Text style={[styles.header,{flex:2}]}>Nível</Text>
+                <Text style={[styles.header,{flex:2}]}>Habilidade</Text>
+                <Text style={[styles.header,{flex:2}]}>Tipo</Text>
+                <Text style={[styles.header,{flex:1}]}>Editar</Text>
             </View>
             <View style={{flexDirection: 'row'}}>
-                <Text style={[styles.inner,{flex:1}]}>5</Text>
-                <Text style={[styles.inner,{flex:1}]}>Conversação</Text>
-                <Text style={[styles.inner,{flex:1}]}>Soft</Text>
+                <Text style={[styles.inner,{flex:2}]}>5</Text>
+                <Text style={[styles.inner,{flex:2}]}>Conversação</Text>
+                <Text style={[styles.inner,{flex:2}]}>Soft</Text>
+                <Text style={[styles.inner,{flex:1}]}><Icon name="content-save-edit"/></Text>
             </View>
             <View style={{flexDirection: 'row'}}>
-                <Text style={[styles.innerA,{flex:1}]}>2</Text>
-                <Text style={[styles.innerA,{flex:1}]}>Alternado</Text>
-                <Text style={[styles.innerA,{flex:1}]}>Hard</Text>
+                <Text style={[styles.innerA,{flex:2}]}>2</Text>
+                <Text style={[styles.innerA,{flex:2}]}>Alternado</Text>
+                <Text style={[styles.innerA,{flex:2}]}>Hard</Text>
+                <Text style={[styles.innerA,{flex:1}]}><Icon name="content-save-edit"/></Text>
             </View>
             <View style={{flexDirection: 'row'}}>
-                <Text style={[styles.inner,{flex:1}]}>5</Text>
-                <Text style={[styles.inner,{flex:1}]}>Conversação</Text>
-                <Text style={[styles.inner,{flex:1}]}>Soft</Text>
+                <Text style={[styles.inner,{flex:2}]}>5</Text>
+                <Text style={[styles.inner,{flex:2}]}>Conversação</Text>
+                <Text style={[styles.inner,{flex:2}]}>Soft</Text>
+                <Text style={[styles.inner,{flex:1}]}><Icon name="content-save-edit"/></Text>
             </View>
             <View style={{flexDirection: 'row'}}>
-                <Text style={[styles.innerA,{flex:1}]}>2</Text>
-                <Text style={[styles.innerA,{flex:1}]}>Alternado</Text>
-                <Text style={[styles.innerA,{flex:1}]}>Hard</Text>
+                <Text style={[styles.innerA,{flex:2}]}>2</Text>
+                <Text style={[styles.innerA,{flex:2}]}>Alternado</Text>
+                <Text style={[styles.innerA,{flex:2}]}>Hard</Text>
+                <Text style={[styles.innerA,{flex:1}]}><Icon name="content-save-edit"/></Text>
             </View>
             <View style={{flexDirection: 'row'}}>
-                <Text style={[styles.inner,{flex:1}]}>5</Text>
-                <Text style={[styles.inner,{flex:1}]}>Conversação</Text>
-                <Text style={[styles.inner,{flex:1}]}>Soft</Text>
+                <Text style={[styles.inner,{flex:2}]}>5</Text>
+                <Text style={[styles.inner,{flex:2}]}>Conversação</Text>
+                <Text style={[styles.inner,{flex:2}]}>Soft</Text>
+                <Text style={[styles.inner,{flex:1}]}><Icon name="content-save-edit"/></Text>
             </View>
             <View style={{flexDirection: 'row'}}>
-                <Text style={[styles.innerA,{flex:1}]}>2</Text>
-                <Text style={[styles.innerA,{flex:1}]}>Alternado</Text>
-                <Text style={[styles.innerA,{flex:1}]}>Hard</Text>
+                <Text style={[styles.innerA,{flex:2}]}>2</Text>
+                <Text style={[styles.innerA,{flex:2}]}>Alternado</Text>
+                <Text style={[styles.innerA,{flex:2}]}>Hard</Text>
+                <Text style={[styles.innerA,{flex:1}]}><Icon name="content-save-edit"/></Text>
             </View>
         </View>
     )
@@ -51,19 +58,22 @@ const styles  = StyleSheet.create({
         fontSize: 25,
         backgroundColor: 'rgb(50,50,50)',
         padding: 10,
-        color: '#ffffff'
+        color: '#ffffff',
+        textAlign: 'center'
     },
     inner: {
         backgroundColor: 'rgb(90,90,90)',
         fontSize: 20,
         color: '#ffffff',
-        paddingLeft: 10
+        paddingLeft: 10,
+        textAlign: 'center'
     },
     innerA: {
         backgroundColor: 'rgb(200,200,200)',
         fontSize: 20,
         color: '#000000',
-        paddingLeft: 10
+        paddingLeft: 10,
+        textAlign: 'center'
     },
     text: {
         fontSize: 25,
