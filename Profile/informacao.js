@@ -11,11 +11,11 @@ export default Informacao = () => {
                 <Card.Title title="Dados" style={styles.labelTitle}/>
                 <Card.Content>
                     <Text style={styles.label}> Nome </Text>
-                    <TextInput style={styles.input} value="Nome BE"/>
+                    <TextInput style={styles.input}/>
                     <Text style={styles.label}> E-mail </Text>
-                    <TextInput style={styles.input} value="email@com"/>
+                    <TextInput style={styles.input}/>
                     <Text style={styles.label}> Instituição </Text>
-                    <TextInput style={styles.input} value="Inst A"/>
+                    <TextInput style={styles.input}/>
                 </Card.Content>
                 <Card.Actions style={styles.left}>
                     <AppButton backgroundColor='rgb(150,100,180)' title="Salvar"/>

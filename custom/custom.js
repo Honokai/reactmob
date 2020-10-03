@@ -5,7 +5,7 @@ TouchableOpacity.defaultProps = { activeOpacity: 0.8 };
 export const AppButton = ({ onPress, title, backgroundColor, width}) => (
     <TouchableOpacity onPress={onPress} style={[
         styles.appButtonContainer,backgroundColor && { backgroundColor }, 
-        width == 'big' && { width: 300 },width == 'med' && { width: 250 } ]} >
+        width == 'big' && { width: 300 },width == 'med' && { width: 250 }, width == 'icon' && {width: 30} ]} >
       <Text style={styles.appButtonText}>{title}</Text>
     </TouchableOpacity>
 );
